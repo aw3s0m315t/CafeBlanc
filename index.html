@@ -2,120 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CafeBlanc – Modern Cafe Template</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CafeBlanc</title>
   <style>
     body {
+      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
+      background-color: #fefefe;
       color: #333;
     }
     header {
-      background-color: #f5f5f5;
-      padding: 2rem;
+      position: relative;
       text-align: center;
+      color: white;
     }
-    header h1 {
+    .hero-image {
+      width: 100%;
+      height: auto;
+      filter: brightness(60%);
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .hero-text h1 {
       font-size: 3rem;
       margin: 0;
-      color: #222;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
+    .hero-text p {
+      font-size: 1.25rem;
     }
-    nav a {
-      text-decoration: none;
-      color: #444;
-      font-weight: 600;
-    }
-    section {
+    main {
+      padding: 2rem;
       max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .menu {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
-    }
-    .menu-item {
-      background: #fafafa;
-      border: 1px solid #eee;
-      padding: 1rem;
-      border-radius: 8px;
-    }
-    .contact-button {
-      display: block;
-      width: fit-content;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background-color: #222;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      text-decoration: none;
+      margin: auto;
     }
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.875rem;
-      color: #777;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>CafeBlanc</h1>
-    <p>Simple, elegant coffee & pastries</p>
-  </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#menu">Menu</a>
-    <a href="#hours">Hours</a>
-    <a href="#location">Location</a>
-  </nav>
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Welcome to CafeBlanc — your cozy neighborhood cafe serving fresh coffee and handmade pastries daily. Come relax, work, or meet friends in our sunny space.</p>
-  </section>
-  <section id="menu">
-    <h2>Menu</h2>
-    <div class="menu">
-      <div class="menu-item">
-        <strong>Latte</strong><br>$4.50
-      </div>
-      <div class="menu-item">
-        <strong>Espresso</strong><br>$3.00
-      </div>
-      <div class="menu-item">
-        <strong>Blueberry Muffin</strong><br>$2.75
-      </div>
-      <div class="menu-item">
-        <strong>Croissant</strong><br>$3.25
-      </div>
+    <img src="coffee.jpg" alt="Coffee" class="hero-image">
+    <div class="hero-text">
+      <h1>Welcome to CafeBlanc</h1>
+      <p>Cozy • Modern • Delicious</p>
     </div>
-  </section>
-  <section id="hours">
-    <h2>Hours</h2>
-    <p>Mon–Fri: 7am–5pm<br>Sat–Sun: 8am–4pm</p>
-  </section>
-  <section id="location">
-    <h2>Location</h2>
-    <p>123 Market Street, San Francisco, CA</p>
-  </section>
-
-  <a href="mailto:youremail@example.com?subject=Contact%20CafeBlanc" class="contact-button">Contact Us</a>
-
+  </header>
+  <main>
+    <h2>About Us</h2>
+    <p>CafeBlanc offers a calm, modern vibe with expertly brewed coffee and fresh pastries daily. Whether you're here to work, relax, or meet friends, we're your neighborhood's cozy corner.</p>
+    <h2>Menu Highlights</h2>
+    <ul>
+      <li>Espresso, Cappuccino, Cold Brew</li>
+      <li>Fresh-baked Croissants, Muffins, and More</li>
+      <li>Seasonal Specialties</li>
+    </ul>
+    <h2>Visit Us</h2>
+    <p>123 Bean Street, San Francisco, CA</p>
+  </main>
   <footer>
-    &copy; 2025 CafeBlanc. All rights reserved.
+    <p>&copy; 2025 CafeBlanc. All rights reserved.</p>
   </footer>
 </body>
 </html>
